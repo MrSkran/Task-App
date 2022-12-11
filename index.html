@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JavaScript</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      form{
+        margin-bottom: 2rem;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 90vh;
+      }
+      .button {
+        all: unset;
+        box-sizing: border-box;
+        background-color: #e22e47;
+        color: white;
+        height: 2rem;
+        padding: 3px;
+        border-radius: 7px;      
+        cursor: pointer;
+      }
+      #taskin {
+        height: 2rem;
+      }
+      .tasks {
+        transition-duration: 0.5s;
+
+      }
+      .tasks div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 1.7rem;
+      }
+      .continer {
+        background: #e4e4e6;
+        padding: 12px;
+      }
+      span {
+        background: #e22e47;
+        width: 4rem;
+        height: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="continer">
+      <form action="">
+        <input type="text" id="taskin">
+        <button class="button" type="submit">Add Tasks</button>
+      </form>
+        <div class="tasks"></div>
+      </div>
+    </div>
+
+
+
+    <script src="js.js"></script>
+  </body>
+</html>
